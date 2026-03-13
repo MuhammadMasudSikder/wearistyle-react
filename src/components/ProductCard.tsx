@@ -29,6 +29,8 @@ export default function ProductCard({ product }: Props) {
       <p>${product.price}</p>
 
       <button onClick={handleAdd}>Add to Cart</button>
+
     </div>
+    
   )
 }
