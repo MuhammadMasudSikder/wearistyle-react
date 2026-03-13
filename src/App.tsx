@@ -10,8 +10,10 @@ import './App.css'
 function App() {
   return (
     <BrowserRouter>
+
       <Navbar />
-      <div className="p-4">
+
+      <div className="max-w-7xl mx-auto p-6">
         <Routes>
           <Route path="/" element={<ProductListPage />} />
           <Route path="/product/:id" element={<ProductDetailsPage />} />
@@ -19,6 +21,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </div>
+      
     </BrowserRouter>
   )
 }
